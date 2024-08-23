@@ -3,7 +3,6 @@ import ImageCard from '../ImageCard/ImageCard';
 import s from './ImageGallery.module.css';
 import { Image } from '../../types/types';
 
-
 interface ImageGalleryProps {
   images: Image[];
   handleOpenModal: (
@@ -26,4 +25,5 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ images, handleOpenModal }) 
 };
 
 export default ImageGallery;
+
 

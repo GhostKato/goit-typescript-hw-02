@@ -29,7 +29,7 @@ function App() {
   const [isError, setIsError] = useState<boolean>(false);
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
-  const [isOpenModal, toggleModal] = useToggle<boolean>(false);
+  const [isOpenModal, toggleModal] = useToggle(false);
   const [modalData, setModalData] = useState<ModalData>({
     url: '',
     alt: '',
