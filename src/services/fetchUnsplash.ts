@@ -24,7 +24,7 @@ const getImages = async (query: string, page: number): Promise<UnsplashResponse>
     params: {
       query,
       page,
-      per_page: 6,
+      per_page: 8,
       client_id: "wgQYQmTP2P2fak55_dmG-lrZF9fAU-cLvea-l11POTI",
     },
   });
