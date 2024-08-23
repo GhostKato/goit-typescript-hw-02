@@ -21,9 +21,9 @@ interface ImageGalleryProps {
   handleOpenModal: (
     url: string,
     alt: string,
-    description: string | undefined,
-    instagram: string | undefined,
-    location: string | undefined
+    description?: string,
+    instagram?: string,
+    location?: string
   ) => void;
 }
 

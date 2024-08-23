@@ -93,22 +93,23 @@ function App() {
   };
 
   const handleOpenModal = (
-    url: string,
-    alt: string,
-    description: string,
-    instagram: string,
-    location: string
-  ) => {
-    toggleModal();
-    document.body.style.overflow = 'hidden';
-    setModalData({
-      url,
-      alt,
-      description,
-      instagram,
-      location,
-    });
-  };
+  url: string,
+  alt: string,
+  description?: string,
+  instagram?: string,
+  location?: string
+) => {
+  toggleModal();
+  document.body.style.overflow = 'hidden';
+  setModalData({
+    url,
+    alt,
+    description: description || '',
+    instagram: instagram || '',
+    location: location || '',
+  });
+};
+
 
   const handleCloseModal = () => {
     toggleModal();
