@@ -9,7 +9,6 @@ import ImageModal from '../ImageModal/ImageModal';
 import s from './App.module.css';
 import useToggle from '../../hooks/modalVisibility';
 
-// Define the types for image and modal data
 interface Image {
   id: string;
   urls: {
