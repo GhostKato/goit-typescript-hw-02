@@ -1,18 +1,6 @@
 import React from 'react';
 import s from './ImageCard.module.css';
-
-interface Image {
-  urls: {
-    regular: string;
-    small: string;
-  };
-  alt_description: string;
-  description?: string;
-  user: {
-    instagram_username?: string;
-    location?: string;
-  };
-}
+import { Image } from '../../types/types';
 
 interface ImageCardProps {
   image: Image;
