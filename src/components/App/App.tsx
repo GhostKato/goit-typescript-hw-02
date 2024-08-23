@@ -9,21 +9,8 @@ import getPhotos from '../../services/fetchUnsplash';
 import ImageModal from '../ImageModal/ImageModal';
 import s from './App.module.css';
 import useToggle from '../../hooks/modalVisibility';
+import { Image } from '../../types/types';
 
-interface Image {
-  id: string;
-  urls: {
-    regular: string;
-  };
-  alt_description: string;
-  description?: string;
-  user: {
-    instagram_username?: string;
-  };
-  location?: {
-    name: string;
-  };
-}
 
 interface ModalData {
   url: string;
